@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Final Project: Sorting Algorithms</title>
+  </head>
+<body>
+
+
+<form id="input-form">
+
+    <label for="input-size">Input Size:</label>
+    <input type="number" id="input-size" name="input-size"><br><br>
+
+    
+    <button type="button" style="background-color:#ffbd03;" id="genSample" onclick="genNumFunction()">Random Numbers Generator</button><br><br>
+
+    <!-- Sort inputs-->
+    <button type="button" style="background-color:#33b249;" id="mergesort" onclick="mergeSort()">Mergesort</button>
+    <button type="button" style="background-color:#33b249;" id="heapsort" onclick="heapSort()">Heapsort</button>
+    <button type="button" style="background-color:#33b249;" id="quicksort1" onclick="quickSort()">Quicksort (Regular)</button>
+    <button type="button" style="background-color:#33b249;" id="quicksort2" onclick="quickSort2()">Quicksort (3 median)</button>
+    <button type="button" style="background-color:#33b249;" id="insertion-sort" onclick="insertionSort()">Insertion Sort</button>
+    <button type="button" style="background-color:#33b249;" id="selection-sort" onclick="selectionSort()">Selection Sort</button>
+    <button type="button" style="background-color:#33b249;" id="bubble-sort" onclick="bubbleSort()">Bubble Sort</button>
+    <button type="button" style="background-color:pink;" id="compare-sort" onclick="compareAlgos()">Compare All</button>
+
+  </form>
+
+  <br><br>
+  <div class="container" >
+    <label for="unsorted-input" id="input-label" hidden>Unsorted Input:</label>
+    <div class="item" id="input" >
+      
+    </div>
+  
+    <br><br>
+    <label for="algo-label" id="algo-label" hidden>Algorithm Used:</label>
+    <div class="item" id="algo"></div>
+
+    <br><br>
+    <label for="sorted-input" id="output-label" hidden>Sorted Output:</label>
+    <div class="item" id="output"></div>
+
+    <br><br>
+    <label for="time" id="time-label" hidden>Time:</label>
+    <div class="item" id=time></div>
+
+    <br><br>
+    <label for="compare" id="compare-label" hidden>Time Comparison:</label>
+    <div class="item" id=compare></div>
+  
+  </div>
+
+  <script src="genNum.js"></script>
+  <script src="sorting.js"></script>
+ 
+</body>
+</html>
+
+<Style>
+  .item {
+  /* width: fit-content; */
+  padding: 10px;
+  border: 2px solid rgb(14, 14, 14);
+  margin: 0;
+  overflow-wrap: break-word;
+  inline-size: 70%;
+  overflow-wrap: break-word;
+  visibility: hidden;
+}
+</Style>
